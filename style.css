@@ -103,6 +103,18 @@ body {
   justify-content: center;
 }
 
+.customer-review {
+  height: auto;
+  width: auto;
+  margin: 10px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 15px;
+  text-align: left;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Specials Section */
 #weekly {
   scroll-margin-top: 50px;
@@ -146,7 +158,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .specials-list {
+  .weekly-list {
     overflow-x: hidden;
     white-space: initial;
     height: auto;
