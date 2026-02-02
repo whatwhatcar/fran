@@ -1,0 +1,149 @@
+:root {
+  --primary-color: white;
+  --text-color: black;
+  --font-stack: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Styles */
+body {
+  color: var(--text-color);
+  text-align: center;
+  background-color: var(--primary-color);
+  font-family: var(--font-stack);
+}
+
+/* Typography */
+
+/* Links & Accents */
+
+/* Navigation */
+#navigation {
+  display: flex;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  width: 100%;
+  background-color: wheat;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-link {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+.flower-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) saturate(100%) invert(31%) sepia(78%) saturate(7498%) hue-rotate(13deg) brightness(95%) contrast(108%);
+}
+
+.nav-menu {
+  margin-left: auto;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+/* Images */
+
+/* Hero Section */
+#hero-container {
+  scroll-margin-top: 125px;
+
+}
+
+/* Main Content */
+
+/* Customer Reviews */
+.review-list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto; 
+
+  margin-left: 25%;
+}
+
+/* Specials Section */
+#specials {
+  scroll-margin-top: 100px;
+}
+
+.specials-list {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.special-offer {
+  display: inline-block;
+
+}
+
+/* Visit Us Section */
+.visit-us {}
+
+iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* Footer */
+footer {
+  margin-top: 48px;
+}
+
+.footer-line {
+  margin: auto;
+  height: 2px;
+  width: 95%;
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .specials-list {
+    overflow-x: hidden;
+    white-space: initial;
+    height: auto;
+  }
+}
