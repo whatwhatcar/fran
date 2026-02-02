@@ -47,12 +47,6 @@ body {
   align-items: center;
 }
 
-.logo-link {
-  display: block;
-  height: auto;
-  width: auto;
-}
-
 .flower-icon {
   position: relative;
   width: 50px;
@@ -95,10 +89,9 @@ body {
 .review-list {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto; 
-
-  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
 }
 
 /* Specials Section */
