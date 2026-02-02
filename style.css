@@ -2,6 +2,9 @@
   --primary-color: white;
   --text-color: black;
   --font-stack: "Comic Sans MS", "Comic Sans", cursive;
+  --divider-color: red;
+
+  --hover-underline-color: blue;
 }
 
 * {
@@ -74,7 +77,7 @@ body {
 
 .nav-link:hover {
   text-decoration: underline;
-  text-decoration-color: yellow;
+  text-decoration-color: var(--hover-underline-color);
 }
 
 /* Images */
@@ -101,11 +104,11 @@ body {
 }
 
 /* Specials Section */
-#specials {
+#weekly {
   scroll-margin-top: 50px;
 }
 
-.specials-list {
+.weekly-list {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -114,13 +117,16 @@ body {
   padding-bottom: 20px;
 }
 
-.special-offer {
+.weekly-offer {
   display: inline-block;
+}
 
+/* Seasonal Specials Section */
+#seasonal {
+  scroll-margin-top: 50px;
 }
 
 /* Visit Us Section */
-.visit-us {}
 
 iframe {
   width: 100%;
@@ -136,7 +142,7 @@ footer {
   margin: auto;
   height: 2px;
   width: 95%;
-  background-color: red;
+  background-color: var(--divider-color);
 }
 
 @media screen and (max-width: 600px) {
