@@ -1,17 +1,20 @@
 :root {
-  --primary-color: white;
-  --text-color: black;
-  --font-stack: "Comic Sans MS", "Comic Sans", cursive;
+  --primary-bg: #fdfaf5; 
+  --text-color: #4a3b33; 
+  --accent-warm: #d4a373;
+  --floral-pink: #e2b4bd;
+  --sage-green: #9fb8ad;  
+  --divider-color: #d8e2dc;  
 
-  --divider-color: red;
+  --font-stack: "Georgia", serif;
 
-  --navbar-color: wheat;
-  --flower-filter: brightness(0) saturate(100%) invert(75%) sepia(31%) saturate(582%) hue-rotate(308deg) brightness(100%) contrast(106%);
+  --navbar-color: #f8ede3;
+  --flower-filter: sepia(0.3) hue-rotate(90deg) opacity(0.8);
 
-  --hover-underline-color: blue;
+  --hover-underline-color: var(--floral-pink);
 
-  --review-content-color: #ead1dc;
-  --review-border-color: #ffb3ba;
+  --review-content-color: #ffffff;
+  --review-border-color: var(--floral-pink);
 }
 
 * {
